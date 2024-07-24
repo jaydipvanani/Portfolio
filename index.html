@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Jaydip</a>
+
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="data" style=" padding-top: 60px;">
+            <div class="textBx" style="text-align: center;">
+                <h2 style="margin-bottom: 20px;">Hello, I'm<br><span>Jaydip Vanani</span></h2>
+                <h3 style="margin-bottom: 20px;">I'm a Full Stack Developer.</h3>
+                <a href="#about" class="btn" style="margin-bottom: 20px;">About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50" style="align-self: center;">
+                <h3>I'm <br><span style="font-size: 40px;">Full Stack Developer.</span></h3>
+                <p style="font-size: 0.8em;">As a fresh full-stack developer, I bring a strong foundation in Node.js and
+                    React, with added expertise in
+                    MongoDB. Proficient in HTML, CSS, and JavaScript, I create reusable and maintainable code using
+                    React's component-based architecture and develop server-side applications and RESTful APIs with
+                    Node.js. My knowledge of MongoDB allows me to design scalable databases. Passionate about delivering
+                    exceptional user experiences, I am eager to learn, collaborate, and contribute to dynamic web
+                    projects.
+                </p>
+            </div>
+            <div class="w50 img-rounded">
+                <img src="img/jaydip.jpg" class="img">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>My Skills</h2>
+            <p>Detailing the technologies and tools I excel in to deliver comprehensive full-stack solutions.</p>
+        </div>
+        <div class="content row">
+            <div class="servicesBx ">
+                <img src="https://img.icons8.com/ios/50/000000/web.png" alt="Web Development Icon">
+                <h2>Web Development</h2>
+                <p>Building dynamic and responsive web applications using HTML, CSS, JavaScript, and modern frameworks
+                    like React for an exceptional user experience.</p>
+            </div>
+            <div class="servicesBx ">
+                <img src="https://img.icons8.com/ios/50/000000/server.png" alt="Server-Side Development Icon">
+                <h2>Server-Side Development</h2>
+                <p>Developing robust server-side applications with Node.js, creating RESTful APIs, and ensuring
+                    efficient communication between the frontend and backend.</p>
+            </div>
+            <div class="servicesBx ">
+                <img src="https://img.icons8.com/ios/50/000000/database.png" alt="Database Management Icon">
+                <h2>Database Management</h2>
+                <p>Proficient in using MongoDB for database management, enabling scalable storage solutions and
+                    efficient querying for web applications.</p>
+            </div>
+            <div class="servicesBx ">
+                <img src="https://img.icons8.com/ios/50/000000/redux.png" alt="State Management Icon">
+                <h2>State Management</h2>
+                <p>Utilizing Redux and Redux-Saga for effective state management in complex applications, ensuring a
+                    smooth and consistent user experience.</p>
+            </div>
+            <div class="servicesBx ">
+                <img src="https://img.icons8.com/ios/50/000000/key.png" alt="User Authentication Icon">
+                <h2>User Authentication</h2>
+                <p>Implementing secure user authentication and authorization mechanisms, ensuring that sensitive user
+                    data is protected and access is properly managed.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>My Latest Work</h2>
+            <p>Showcasing a collection of my recent projects and accomplishments.</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product1.jpg" alt="Project 1">
+            </div>
+            <div class="workBx">
+                <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product2.jpg" alt="Project 2">
+            </div>
+            <div class="workBx">
+                <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product3.jpg" alt="Project 3">
+            </div>
+            <div class="workBx">
+                <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product4.jpg" alt="Project 4">
+            </div>
+        </div>
+        <div class="heading">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Us</h2>
+            <p>Let's get you an estimate</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>149<br>Ayodhya,Punagam,<br>Surat</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+91 9510781394</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>vananijaydip53@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="">
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p> © 2024 JAYDIP VANANI. All Right Reserved.</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+        const toggleMenu = () => {
+            const menuToggle = document.querySelector('.toggle');
+            const menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
