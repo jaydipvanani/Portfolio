@@ -22,7 +22,163 @@
   display: flex;
   justify-content: space-around;
 }
+.section-title {
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+}
 
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.skills__text {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.skills__data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skills__names {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.skills__icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.skills__name {
+  font-size: 1.1em;
+}
+
+.skills__bar {
+  position: relative;
+  width: 60%;
+  height: 10px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+}
+
+.skills__bar::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #3498db;
+}
+
+.skills__html::before {
+  width: 95%;
+}
+
+.skills__css::before {
+  width: 85%;
+}
+
+.skills__js::before {
+  width: 65%;
+}
+
+.skills__ux::before {
+  width: 85%;
+}
+
+.skills__percentage {
+  font-size: 1em;
+  width: 10%;
+}
+
+.skills__img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills__container {
+      flex-direction: column;
+  }
+
+  .skills__data {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .skills__names, .skills__percentage {
+      width: 100%;
+  }
+
+  .skills__bar {
+      width: 100%;
+  }
+
+  .skills__icon {
+      font-size: 1.2em;
+  }
+
+  .skills__name {
+      font-size: 1em;
+  }
+
+  .skills__percentage {
+      text-align: left;
+      margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+      font-size: 1.5em;
+  }
+
+  .skills__subtitle {
+      font-size: 1.2em;
+  }
+
+  .skills__text {
+      font-size: 0.9em;
+  }
+
+  .skills__names {
+      width: 100%;
+  }
+
+  .skills__icon {
+      font-size: 1em;
+  }
+
+  .skills__name {
+      font-size: 0.9em;
+  }
+
+  .skills__bar {
+      height: 8px;
+  }
+
+  .skills__percentage {
+      font-size: 0.9em;
+      margin-top: 3px;
+  }
+
+  .skills__img {
+      margin-top: 20px;
+  }
+}
 .social-media {
   margin-bottom: 10px;
 }
@@ -293,43 +449,8 @@ img {
   max-width: 100%;
 }
 
-.testimonial {
-  background: #f7f7f7;;
-}
 
-.testimonial .content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
-.testimonial .content .testimonialBx {
-  max-width: calc(50% - 40px);
-  padding: 60px 40px;
-  margin: 20px;
-  background: #2196f3;
-}
-
-.testimonial .content .testimonialBx p {
-  color: #fff;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.testimonial .content .testimonialBx h3  {
-  margin-top: 40px;
-  text-align: end;
-  color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1em;
-}
-
-.testimonial .content .testimonialBx h3 span {
-  font-size: 14px;
-  font-weight: 400;
-}
 
 .contact {
   background: #111;
