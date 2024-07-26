@@ -99,6 +99,7 @@ section {
 }
 
 .banner {
+  align-content: center;
   position: relative;
   min-height: 100vh;
   background-color: #111;
@@ -438,6 +439,10 @@ img {
   flex-direction: column;
   font-weight: 300;
 }
+.contactInfoBx .box .text a{
+  color: #fff;
+  text-decoration: none;
+}
 
 .contactInfoBx .box .text h3 {
   font-weight: 500;
@@ -650,42 +655,42 @@ img {
 .skill-percentage {
   height: 20px;
   border-radius: 10px;
+  background-color: #111;
 }
 
 .skill-percentage.html {
   width: 90%;
   height: 10px;
-  background-color:  #60140d;
 }
 
 .skill-percentage.css {
   width: 70%;
   height: 10px;
-  background-color: #60140d;
+
 }
 
 .skill-percentage.js {
   width: 60%;
   height: 10px;
-  background-color:  #60140d;
+  
 }
 
 .skill-percentage.react {
   width: 80%;
   height: 10px;
-  background-color:  #60140d;
+  
 }
 
 .skill-percentage.node {
   width: 85%;
   height: 10px;
-  background-color:  #60140d;
+  
 }
 
 .skill-percentage.mongodb {
   width: 80%;
   height: 10px;
-  background-color:  #60140d;
+  
 }
 
 /* Media Queries */
