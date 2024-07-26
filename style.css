@@ -9,7 +9,68 @@
   scroll-behavior: smooth;
 }
 .img{
-    border-radius: 30%;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+
+}
+.footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .social-media a {
+      margin: 0 5px;
+      font-size: 20px;
+  }
+  .footer {
+  display: block;
+  text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-media {
+      margin-bottom: 20px;
+  }
+
+  .social-media a {
+      font-size: 18px;
+      margin: 0 3px;
+  }
+
+  .footer {
+      padding: 15px 0;
+  }
+
+  .copyright p {
+      font-size: 14px;
+  }
 }
 
 section {
@@ -74,6 +135,7 @@ section {
   }
 }
 
+
 .btn {
   position: relative;
   background: #2196f3;
@@ -100,21 +162,7 @@ header {
   align-items: center;
   transition: 0.5s;
 }
-.col-4{
-    width: 33.33333333333333%;
-}
-.col-6{
-    width: 50%;
-}
-.col-8{
-    width: 66.66666666666666%;
-}
-.col-10{
-    width: 83.33333333333333%;
-}
-.col-12{
-    width: 100%;
-}
+
 
 header.sticky {
   background: #fff;
@@ -386,6 +434,7 @@ img {
     padding: 20px 50px;
     z-index: 1000;
   }
+ 
 
   .menu {
     position: fixed;
@@ -511,4 +560,124 @@ img {
   section {
     padding: 100px 20px;
   }
+}
+
+
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill p {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-percentage {
+    height: 20px;
+    border-radius: 10px;
+}
+
+.skill-percentage.html {
+    width: 90%;
+    background-color: #e34c26;
+}
+
+.skill-percentage.css {
+    width: 80%;
+    background-color: #2965f1;
+}
+
+.skill-percentage.js {
+    width: 70%;
+    background-color: #f0db4f;
+}
+
+.skill-percentage.react {
+    width: 75%;
+    background-color: #61dafb;
+}
+
+.skill-percentage.node {
+    width: 65%;
+    background-color: #3c873a;
+}
+
+.skill-percentage.mongodb {
+    width: 60%;
+    background-color: #4DB33D;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 30px 10px;
+    }
+
+    .skill {
+        padding: 15px;
+    }
+
+    .skill p {
+        font-size: 1em;
+    }
+
+    .skill-bar {
+        height: 15px;
+    }
+
+    .skill-percentage {
+        height: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 20px 5px;
+    }
+
+    .skill {
+        padding: 10px;
+    }
+
+    .skill p {
+        font-size: 0.8em;
+    }
+
+    .skill-bar {
+        height: 10px;
+    }
+
+    .skill-percentage {
+        height: 10px;
+    }
 }
